@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Edit User</title>
+</head>
+<body>
+    <h1>Edit Pengguna</h1>
+    <form method="POST" action="{{ url_for('update_user', id=user[0]) }}">
+        <input type="text" name="name" value="{{ user[1] }}" required>
+        <input type="email" name="email" value="{{ user[2] }}" required>
+        <button type="submit">Update</button>
+    </form>
+</body>
+</html>

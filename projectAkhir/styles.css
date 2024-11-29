@@ -1,0 +1,303 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.left {
+  background-color: #005bac;
+  color: rgb(255, 255, 255);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.left h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.left .partners img {
+  width: 50px;
+  margin: 0 10px;
+}
+
+.left p {
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.form-container {
+  width: 300px;
+  text-align: center;
+}
+
+.form-container h2 {
+  margin-bottom: 10px;
+}
+
+.form-container form {
+  margin-top: 20px;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.password-container {
+  position: relative;
+  align-items: center;
+}
+
+.password-container img {
+  position: absolute;
+  top: 38%;
+  width: 25px;
+  right: 1px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #005bac;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  align-items: center;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #6ba6e9;
+}
+
+a {
+  color: #41729d;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background: #e2e0e9;
+  color: #3897f0;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1px; /* Jarak antara logo dan teks */
+}
+
+.logo-image {
+  width: 50px; /* Atur lebar logo */
+  height: 40px; /* Atur tinggi logo */
+  object-fit: contain; /* Menjaga rasio logo */
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+nav ul {
+  /* list-style: none;
+    display: flex; */
+  list-style: none; /* Menghilangkan bullet point */
+  display: flex; /* Menyusun item secara horizontal */
+  justify-content: center; /* Memusatkan item di tengah */
+  align-items: center; /* Menjaga item tetap sejajar secara vertikal */
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #3897f0;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.auth-buttons .btn {
+  background: #3897f0;
+  color: #ffffff;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-left: 10px;
+  transition: background 0.3s;
+}
+
+.auth-buttons .btn:hover {
+  background: #c0cdd8;
+}
+
+.hero {
+  /* text-align: center;
+  padding: 50px 20px;
+  background: #5aa9f2;
+  margin: 20px 0;
+  border-radius: 0px;
+  color: white ; */
+background: linear-gradient(135deg, #007bff, #0056b3);
+color: white;
+padding: 60px 0;
+text-align: center;
+}
+
+.hero .cta-btn {
+  background: #f3a30e;
+}
+
+.cta-btn {
+  display: inline-block;
+  background: #3897f0;
+  color: white;
+  padding: 10px 13px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.cta-btn:hover {
+  background: #003d75;
+}
+
+section {
+  padding: 10px;
+  margin: 0px 0;
+  background: white;
+  border-radius: 0px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background: #333;
+  color: white;
+  margin-top: 20px;
+}
+
+footer a {
+  color: #3897f0;
+  text-decoration: none;
+}
+
+.image-menu {
+  text-align: center; /* Memusatkan konten */
+  margin: 20px 0; /* Jarak atas dan bawah */
+}
+
+.menu-image {
+  max-width: 50%;
+  height: 10%;
+  margin-bottom: 10px;
+}
+
+.menu-container {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center; /* Elemen mulai dari kiri */
+  gap: 100px; /* Tambahkan jarak konsisten antar elemen */
+  align-items: center; /* Vertikal sejajar */
+}
+
+.menurow {
+  width: 18%;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.menurow:hover {
+  transform: scale(1.05); /* Memperbesar sedikit untuk efek interaktif */
+}
+
+.menurow h3,
+.menurow p {
+  margin: 0; /* Hilangkan margin default */
+  padding: 0; /* Hilangkan padding default */
+}
+
+.menurow h3 {
+  margin-top: 0px; /* Tambahkan sedikit jarak di atas teks */
+  font-size: 1.2em; /* Sesuaikan ukuran teks jika perlu */
+}
+
+.menurow p {
+  margin: 5px 0; /* Jarak antara paragraf dan elemen lainnya */
+}
+
+.tujuan h2{
+  display: flex;
+  justify-content: center; 
+}
+.tujuan p{
+  display: flex;
+  justify-content: center; 
+}
+
+.deskripsi {
+  margin-top: 10px; /* Tambahkan jarak antara section */
+}
+
+.deskripsi-container {
+  margin-top: 10px; /* Tambahkan jarak internal */
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+
+.menu-container {
+  margin-bottom: 10px; /* Tambahkan jarak bawah */
+}

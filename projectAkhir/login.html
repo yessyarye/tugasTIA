@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <h1>SmartSalary</h1>
+        <h2>Estimasi Gaji Anda, Untuk Pilihan Karier yang Lebih Cerdas</h2>
+        <div class="partners">
+          <img src="assets/peppa.jpeg" alt="Partner 1" />
+          <img src="assets/mashle.png" alt="Partner 2" />
+          <img src="assets/aot.png" alt="Partner 3" />
+        </div>
+        <p>© 2024 Yessy Arye. All Rights Reserved.</p>
+      </div>
+      <div class="right">
+        <div class="form-container">
+          <h2>Masuk</h2>
+          <p>Belum punya akun? <a href="signup.html">Daftar di sini</a></p>
+          <form action="#">
+
+            <input type="email" placeholder="Email" required />
+
+            <div class="password-container">
+
+              <input
+                type="password"
+                placeholder="Kata sandi"
+                id="password"
+                required
+              />
+              <img src="assets/eye-close.png" id="eyeicon" />
+            </div>
+            
+            <button type="submit">Masuk</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Link ke file script.js -->
+    <script>
+      let eyeicon = document.getElementById("eyeicon");
+      let password = document.getElementById("password");
+    
+      eyeicon.addEventListener("click", () => {
+        if (password.type === "password") {
+          password.type = "text"; // Ubah tipe input menjadi teks
+          eyeicon.src = "assets/eye-open.png"; // Ganti ikon mata menjadi terbuka
+        } else {
+          password.type = "password"; // Ubah tipe input menjadi password
+          eyeicon.src = "assets/eye-close.png"; // Ganti ikon mata menjadi tertutup
+        }
+      });
+    
+      // Menangani saat form dikirim
+      document.querySelector("form").addEventListener("submit", function (event) {
+        let role = document.querySelector('input[name="role"]:checked');
+        
+        if (!role) {
+          alert("Pilih jenis login (Admin atau User)!");
+          event.preventDefault(); // Mencegah form dikirim jika tidak ada pilihan role
+        } else {
+          console.log("Role yang dipilih: " + role.value);
+          // Proses lanjut untuk login berdasarkan role (Admin atau User)
+        }
+      });
+    </script>
+  </body>
+</html>

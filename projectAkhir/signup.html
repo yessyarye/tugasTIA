@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-Up Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <h1>SmartSalary</h1>
+        <h2>Estimasi Gaji Anda, Untuk Pilihan Karier yang Lebih Cerdas</h2>
+        <div class="partners">
+          <img src="partner1.png" alt="Partner 1" />
+          <img src="partner2.png" alt="Partner 2" />
+          <img src="partner3.png" alt="Partner 3" />
+        </div>
+        <p>© 2024 Yessy Arye. All Rights Reserved.</p>
+      </div>
+      <div class="right">
+        <div class="form-container">
+          <h2>Daftar</h2>
+          <p>Sudah punya akun? <a href="login.html">Masuk di sini</a></p>
+          <form action="#">
+            <input type="text" placeholder="Nama Lengkap" required />
+            <input type="email" placeholder="Email" required />
+            <div class="password-container">
+              <input
+                type="password" placeholder="Kata sandi" id="password" required />
+              <img src="assets/eye-close.png" id="eyeicon1" />
+            </div>
+            <div class="password-container">
+              <input
+                type="password" placeholder="Konfirmasi Kata Sandi" id="confirm-password" required />
+              <img src="assets/eye-close.png" id="eyeicon2" />
+            </div>
+            <button type="submit">Daftar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let eyeicon1 = document.getElementById("eyeicon1");
+      let password1 = document.getElementById("password");
+
+      eyeicon1.addEventListener("click", () => {
+        if (password1.type === "password") {
+          password1.type = "text";
+          eyeicon1.src = "assets/eye-open.png";
+        } else {
+          password1.type = "password";
+          eyeicon1.src = "assets/eye-close.png";
+        }
+      });
+
+      let eyeicon2 = document.getElementById("eyeicon2");
+      let confirmPassword = document.getElementById("confirm-password");
+
+      eyeicon2.addEventListener("click", () => {
+        if (confirmPassword.type === "password") {
+          confirmPassword.type = "text";
+          eyeicon2.src = "assets/eye-open.png";
+        } else {
+          confirmPassword.type = "password";
+          eyeicon2.src = "assets/eye-close.png";
+        }
+      });
+    </script>
+  </body>
+</html>
